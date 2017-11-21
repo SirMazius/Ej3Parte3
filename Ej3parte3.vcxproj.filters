@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Archivos de código fuente">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Archivos de encabezado">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Archivos de recursos">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="imagenes">
+      <UniqueIdentifier>{b3d5cad7-e900-4ffe-8938-541bd7e1c1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{f7a3f848-b513-4139-9a0c-99ce10eab267}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="vbotorus.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="tga.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="Ej3parte3.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="vbotorus.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+    <ClCompile Include="tga.cpp">
+      <Filter>Archivos de código fuente</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="brick_color.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="brick_gloss.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="brick_height.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="brick_normal.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="ground_color.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="ground_height.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="ground_normal.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="normal_map.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="stone_color.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="stone_gloss.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="stone_height.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+    <Image Include="stone_normal.tga">
+      <Filter>imagenes</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tema3_parte3.frag">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="tema3_parte3.vert">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>
