@@ -410,7 +410,7 @@ bool init()
 	locUniformUseColor = glGetUniformLocation(programID, "use_color");
 	locUniformUseGloss = glGetUniformLocation(programID, "use_gloss");
 	locUniformParallexSimple = glGetUniformLocation(programID, "use_parallex_simple");
-	locUniformParallexIterative = glGetUniformLocation(programID, "use_parallex_interative	");
+	locUniformParallexIterative = glGetUniformLocation(programID, "use_parallex_interative");
 
 	// Inicializa Texturas
 	TGAFILE tgaImage;

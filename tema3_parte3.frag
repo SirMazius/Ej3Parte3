@@ -74,19 +74,26 @@ void main() {
 		Vst = vST + hsb * normalize(vViewDir.xy);
 	}
 
-	//if (use_parallex_interative) {
-	//	float hsb1 = scale + bias;
-	//	float h;
-	//	vec2 st1 = Vst + hsb1 * normalize(vViewDir.xy);
-	//	float hsb2 = bias;
-	//	vec2 st2 = Vst + hsb2 * normalize(vViewDir.xy);
-	//	for (int i = 0; i < 10; i++) {
-	//		Vst = (st1 + st2) / 2;
-	//		float hsb = (hsb1 + hsb2) / 2;
-	//		h = texture(uHeightMap, Vst) * scale + bias;
+	if (use_parallex_interative) {
+		float hsb1 = scale + bias;
+		float h;
+		vec2 st1 = Vst + hsb1 * normalize(vViewDir.xy);
+		float hsb2 = bias;
+		vec2 st2 = Vst + hsb2 * normalize(vViewDir.xy);
+		for (int i = 0; i < 50; i++) {
+			Vst = (st1 + st2) / 2;
+			float hsb = (hsb1 + hsb2) / 2;
+			h = texture(uHeightMap, Vst).r * scale + bias;
 
-	//	}
-	//}
+			if (h > hsb) {
+				hsb2 = hsb;
+				st2 = Vst;
+			} else {
+				hsb1 = hsb;
+				st1 = Vst;
+			}
+		}
+	}
 
 
 	if (use_normal)
